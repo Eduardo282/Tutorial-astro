@@ -1,21 +1,8 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-const pageTitle = "Página de inicio";
+const pageTitle = "Home Page";
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-    <h1>Mi sitio astro</h1>
-
-    <Navigation />
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Mi impresionante subtítulo del blog</h2>
+</BaseLayout>
